@@ -1,0 +1,84 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+
+body{
+    height: 100vh;
+    background-image: linear-gradient(to right, rgb(205, 144, 31), rgb(201, 107, 40));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: auto;
+}
+
+.card{
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    background-color: azure;
+    color: rgb(50, 50, 50);
+    margin: 15px;
+    box-shadow: 0, 0, 0 rgb(0,0,0,0.15);
+    min-width: 250px;
+    max-width: 310px;
+    width: 100%;
+    aspect-ratio: 2/3;
+    text-align: center;
+    border-radius: 2px;
+}
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.4);
+    transition-duration: 300ms;
+}
+.card img{
+    height: 60%;
+    width: 60%;
+    max-width: 60%;
+    border-radius: 50%;
+    vertical-align: top;
+    position: relative;
+}
+
+
+.card .profile{
+    padding: 15% 10% 0%;
+}
+
+.card figcaption{
+    padding: 5% 10% 15%;
+}
+
+.card h3{
+    font-family: 'Oswald';
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 3px 0px;
+}
+.card h5{
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0;
+    letter-spacing: 1px;
+    color: rgb(0,0,0,0.55);
+}
+
+.card p{
+    height: 8.5em;
+}
+
+.card .icons i{
+    color: rgb(50, 50, 50, 0.5);
+    margin-right: 5px;
+    display: inline-block;
+    font-size: 1.5em;
+    letter-spacing: 6px;
+    
+}
+
+.card .icons i:hover{
+    color: rgb(50, 50, 50);
+}
