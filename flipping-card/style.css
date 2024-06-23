@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+}
+
+section{
+    min-height: 100vh;
+    min-width: 100%;
+    position: relative;
+    background-color: rgb(22, 23, 34);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+}
+
+section::before{
+    content: "";
+    position: absolute;
+    height: 240px;
+    width: 240px;
+    border-radius: 50%;
+    transform: translate(-150px, -100px);
+    background: linear-gradient(90deg, rgb(107, 125, 81), rgb(237, 255, 211));
+}
+
+section::after{
+    content: "";
+    position: absolute;
+    height: 240px;
+    width: 240px;
+    border-radius: 50%;
+    transform: translate(150px, 100px);
+    background: linear-gradient(90deg, rgb(107, 125, 81), rgb(237, 255, 211));
+}
+
+.container{
+    position: relative;
+    height: 225px;
+    width: 375px;
+    z-index: 100;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+}
+
+.container:hover{
+    transform: rotateY(180deg);
+}
+
+.container .card{
+    height: 100%;
+    width: 100%;
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+    backdrop-filter: blur(25px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.card.front header, .front .logo{
+    display: flex;
+    align-items: center;
+}
+
+.card.front header{
+    justify-content: space-between;
+}
+
+.card.front .logo img{
+    width: 68px;
+}
+
+.card.front .chip{
+    width: 48px;
+}
+
+.card.front .card-details{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+h5{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+h6{
+    font-size: 10px;
+    font-weight: 400;
+}
+
+h5.number{
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+h5.name{
+    margin-top: 20px;
+}
+
+.card.back{
+    border: none;
+    padding: 15px 25px 25px 25px;
+    transform: rotateY(180deg);
+}
+
+.card.back h6{
+    font-size: 8px;
+    text-align: justify;
+}
+
+.card.back .black-strip{
+    position: absolute;
+    height: 40px;
+    width: 100%;
+    background-color: black;
+    left: 0;
+    top: 50px;
+}
+
+.card.back .cvv{
+    margin-top: 68px;
+    border-radius: 6px;
+    padding: 8px;
+    width: 100%;
+    height: 30px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background: repeating-linear-gradient(
+        #fff,
+        #fff 3px,
+        #efefef 0,
+        #efefef 9px
+    );
+}
+
+.card.back .cvv i{
+    color: black;
+}
+
+.card.back h5{
+    font-size: 8px;
+    margin-top: 15px;
+    text-align: justify;
+}
