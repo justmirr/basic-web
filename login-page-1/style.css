@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    --main-color: rgb(133, 198, 176);
+    --sec-color: rgb(100, 150, 133);
+}
+
+body{
+    background-color: var(--main-color);
+    overflow: hidden;
+}
+
+.wrapper{
+    max-width: 440px;
+    padding: 20px;
+    overflow: hidden;
+    margin: 150px auto;
+}
+
+.container{
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.container .title{
+    line-height: 80px;
+    background-color: var(--sec-color);
+    border-radius: 10px 10px 0 0;
+    font-size: 25px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+}
+
+.container form{
+    padding: 30px 20px 30px 20px;
+}
+
+.container form .row{
+    height: 45px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.container form .row input{
+    height: 100%;
+    width: 100%;
+    padding-left: 55px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgb(102, 102, 102);
+    font-size: 14px;
+    padding-right: 10px;
+}
+
+.container form .row i{
+    position: absolute;
+    border-radius: 5px 0 0 5px;
+    width: 45px;
+    height: 100%;
+    color: #fff;
+    background-color:var(--sec-color);
+    border: 1px solid rgb(102, 102, 102);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container form .button input{
+    padding-left: 0;
+    background-color: var(--sec-color);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.container form .button input:hover{
+    background-color: rgb(77, 116, 103);
+}
+
+.container form .forgot{
+    margin: -8px 0 8px 0;
+    padding-bottom: 8px;
+}
+
+.container form .forgot a{
+    color: var(--sec-color);
+}
+
+.container form .forgot a:hover,
+.container form .sign-up a:hover{
+    text-decoration: underline;
+}
+
+.container form .sign-up{
+    margin-bottom: -10px;
+    display: flex;
+    justify-content: center;
+}
+
+.container form .sign-up a{
+    color: var(--sec-color);
+}
