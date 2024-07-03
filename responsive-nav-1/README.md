@@ -1,6 +1,6 @@
 # Responsive Nav
 
-It demonstrates a simple, responsive, and sticky navigation bar using HTML and CSS. The navigation bar stays fixed at the top of the page, ensuring easy access to the menu items.
+It demonstrates a simple, responsive, and modern-designed navigation bar using HTML, CSS, and JavaScript. 
 
 ## Demonstration
 
