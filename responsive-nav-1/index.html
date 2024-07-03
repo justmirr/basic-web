@@ -7,21 +7,43 @@
     <title>Nav</title>
 </head>
 <body>
-    <nav>        
-        <span class="logo"><img src="images/logo.png" alt="">
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-        </label>
-        <ul>
-            <li><a class="active" href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Products</a></li>
+    <div class="navbar">
+        <div class="logo"><a href="#"><img src="images/logo.png" alt=""></a></div>
+        <ul class="links">
+            <li><a href="Home">Home</a></li>
+            <li><a href="About">About</a></li>
+            <li><a href="Services">Services</a></li>
+            <li><a href="Contact">Contact</a></li>
         </ul>
-    </nav>
-    <div class="page1"></div>
+        <a href="#" class="action_btn">Get Started</a>
+        <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="dropdown">
+            <li><a href="Home">Home</a></li>
+            <li><a href="About">About</a></li>
+            <li><a href="Services">Services</a></li>
+            <li><a href="Contact">Contact</a></li>
+            <li><a href="#" class="action_btn">Get Started</a></li>
+        </div>
+    </div>
+
+    <section id="hero">
+        <h1>Welcome</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores corrupti, asperiores esse dolor dolorem, at aut veniam minus tenetur beatae eligendi quasi suscipit culpa perspiciatis dignissimos vitae labore exercitationem quibusdam!</p>
+    </section>
     <script src="https://kit.fontawesome.com/ed61603bb2.js" crossorigin="anonymous"></script>
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn');
+        const toggleBtnIcon = document.querySelector('.toggle_btn i');
+        const dropdownMenu = document.querySelector('.dropdown');
+        toggleBtn.onclick = function(){
+            dropdownMenu.classList.toggle('open');
+            const isOpen = dropdownMenu.classList.contains('open');
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
 </body>
 </html>
