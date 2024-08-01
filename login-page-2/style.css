@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+}
+
+body{
+    background-color: rgb(248,249,253);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    max-width: 800px;
+    width: 90%;
+    height: 490px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    display: flex;
+}
+
+/* Sign In Container */
+
+.sign-in{
+    width: 50%;
+    background-color: #fff;
+    padding: 45px;
+}
+
+.sign-in .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sign-in .header h1{
+    color: #000;
+    font-weight: 300;
+    font-size: 28px;
+}
+
+.header .header-icons .icons{
+    border: 1px solid #ececec;
+    border-radius: 50%;
+    color: #a7a7a7;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.header .header-icons .icons:hover{
+    border: none;
+    background-color: rgb(244,86,125);
+    color: #fff;
+}
+
+.header .header-icons .facebook-icon{
+    padding: 10px 15px;
+}
+
+.header .header-icons .twitter-icon{
+    padding: 10px 12px;
+}
+
+.sign-in .login-input{
+    display: flex;
+    flex-direction: column;
+    margin-top: 26px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 3;
+}
+
+.login-input .input{
+    padding: 14px;
+    border-radius: 24px;
+    border: none;
+    background-color: #ececec;
+    outline: none;
+    color: #434343;
+}
+
+.login-input label{
+    margin-top: 10px;
+}
+
+.login-input .input::placeholder{
+    color: #a7a7a7;
+}
+
+.login-input .button{
+    background: linear-gradient(to right, rgb(246,88,102), rgb(244,86,125));
+    margin-top: 16px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    color: #fff;
+}
+
+.login-input .button:hover{
+    background: none;
+    background: rgb(244,86,125);
+}
+
+.sign-in .footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.footer .checkbox{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer .checkbox #remember{
+    appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: #ececec;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgb(244,86,125); */
+}
+
+.footer .checkbox #remember:hover{
+    background-color: #a7a7a7;
+}
+
+.footer .checkbox #remember:checked{
+    background-color: rgb(244,86,125);
+}
+
+.footer .checkbox #remember:checked::after{
+    display: block;
+}
+
+.footer .checkbox #remember::after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 800;
+    content: '\f00c';
+    font-size: 14px;
+    color: #fff;
+    display: none;
+}
+
+.footer .checkbox label{
+    color: rgb(246,88,102);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.footer a{
+    color:#818181 ;
+}
+
+/* Sign Up Container */
+
+.sign-up{
+    background: linear-gradient(to right, rgb(246,88,102), rgb(244,86,125));
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 18px;
+    color: #fff;
+}
+
+.sign-up h1{
+    font-weight: 800;
+}
+
+.sign-up input[type="button"]{
+    padding: 12px 22px;
+    font-size: 16px;
+    border-radius: 30px;
+    border: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+    transition: all 0.2s ease;
+}
+
+.sign-up input[type="button"]:hover{
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+}
+
+@media (max-width: 1193px){
+    .container{
+        height: 460px;
+    }
+
+    .sign-in{
+        padding: 35px;
+    }
+}
+
+@media (max-width: 992px){
+    .container{
+        height: 410px;
+    }
+
+    .sign-in{
+        padding: 25px;
+    }
+}
+
+@media (max-width: 720px){
+    .container{
+        height: 85%;
+        width: 70%;
+        flex-direction: column-reverse;
+    }
+
+    .sign-in{
+        width: 100%;
+        height: 65%;
+    }
+
+    .login-input{
+        margin-top: 18px;
+    }
+
+    .login-input label{
+        margin-top: 5px;
+    }
+
+    .sign-up{
+        width: 100%;
+        height: 35%;
+    }
+}
