@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Outfit", sans-serif;
+}
+
+body{
+    background-color: #e3d5cc;
+    max-width: 100vw;
+    width: 100%;
+    overflow: hidden;
+}
+
+.container-page{
+    padding: 25px;
+}
+
+.container-page header{
+    margin: 5px 0 25px 0;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.container-page header img{
+    width: 200px;
+}
+
+.container-page .blog-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0 30px;
+}
+
+.container-page .blog-cards .post{
+    max-width: 370px;
+    width: 100%;
+    display: flex;
+    gap: 12px;
+    padding: 20px;
+    align-items: center;
+    flex-direction: column;
+    background-color: #d4c7bf;
+}
+
+.container-page .blog-cards .card-2{
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.blog-cards .post .post-image{
+    max-width: 320px;
+    max-width: 320px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.blog-cards .post .post-image img{
+    width: 100%;
+    height: 100%;
+}
+
+.blog-cards .card-2 .post-image{
+    box-shadow: none;
+}
+
+.blog-cards .post h3{
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+}
+
+.blog-cards .post p{
+    text-align: justify;
+    font-weight: 300;
+}
+
+.blog-cards .post .date{
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+    color: #775744;
+}
+
+.blog-cards .post button{
+    width: 40%;
+    padding: 10px;
+    border: none;
+    background-color: #775744;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.blog-cards .post button:hover{
+    scale: 1.1;
+    background-color: #8d6751;
+}
+
+.blog-cards .post button a{
+    color: #fff;
+}
+
+/* Media Queries */
+
+@media (max-width: 1220px){
+    body{
+        overflow: scroll;
+    }
+
+    .blog-cards .post{
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 920px){
+    .blog-cards .post{
+        margin-bottom: 20px;
+    }
+}
